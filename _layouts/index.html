@@ -11,8 +11,6 @@
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
-    
     {% include favicon.html %}
 
     <link rel="stylesheet" href="{{ "/assets/css/index.css" }}" />
@@ -21,14 +19,14 @@
     {% include statistics_head.html %}
   </head>
   <body>
-    <div class="index-zzq">
-      {% if site.zzq %}
-      <a href="/articles"><img src="{{ site.zzq }}" alt="zzq"></a>
+    <div class="index-avatar">
+      {% if site.avatar %}
+      <a href="/articles"><img src="{{ site.avatar }}" alt="avatar"></a>
       {% else %}
         {% assign image_files = site.static_files | where: "image", true %}
         {% for image in image_files %}
-          {% if image.basename == 'zzq' %}
-          <a href="/articles"><img src="{{ image.path }}" alt="zzq"></a>
+          {% if image.basename == 'avatar' %}
+          <a href="/articles"><img src="{{ image.path }}" alt="avatar"></a>
           {% endif %}
         {% endfor %}
       {% endif %}
