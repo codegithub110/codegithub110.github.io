@@ -22,6 +22,7 @@
     <div class="index-zzq">
       {% if site.zzq %}
       <a href="/articles"><img src="{{ site.zzq }}" alt="zzq"></a>
+      <a href="/articles"><img src="assets/img/zzq.png" alt="zzq"></a>
       {% else %}
         {% assign image_files = site.static_files | where: "image", true %}
         {% for image in image_files %}
